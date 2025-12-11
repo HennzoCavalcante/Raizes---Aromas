@@ -257,3 +257,76 @@ header img {
     display: flex;
     justify-content: center;
 }
+
+/* ----------------- Catalogo ----------------- */
+
+#catalogo {
+    margin-top: 300px;
+}
+
+.titulo_catalogo{
+    font-family: "Montserrat", bold;
+    font-size: 25px;
+
+    display: flex;
+    justify-content: center;
+
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.carousel-slide {
+    min-width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+}
+
+
+.carousel-slide img {
+    width: 95%;
+    height: 486px;
+    border-radius: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+
+    z-index: 1;
+}
+
+.botao {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--branco);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+
+#voltar {
+    left: 10px;
+}
+
+#proximo {
+    right: 10px;
+}

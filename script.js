@@ -43,3 +43,37 @@ onresize = () => {
         iconeBarras.style.display = "none"
     }
 }
+
+const track = document.getElementById("track");
+const prevBtn = document.getElementById("voltar");
+const nextBtn = document.getElementById("proximo");
+
+const totalSlides = document.querySelectorAll('.carousel-slide').length;
+const visibleSlides = 3;
+let index = 0;
+
+function updateCarousel() {
+    const slideWidth = track.children[0].getBoundingClientRect().width;
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+}
+
+nextBtn.addEventListener("click", () => {
+    index++;
+
+    if (index > totalSlides - visibleSlides) {
+        index = 0;
+    }
+
+    updateCarousel();
+});
+
+prevBtn.addEventListener("click", () => {
+    index--;
+
+    if (index < 0) {
+        index = totalSlides - visibleSlides;
+    }
+
+    updateCarousel();
+});
+
