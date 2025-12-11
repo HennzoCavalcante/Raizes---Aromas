@@ -504,3 +504,61 @@ header img {
     font-size: 18px;
     line-height: 1.4;
 }
+/* ----------------- Horário ----------------- */
+
+
+#horario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+
+}
+
+#horario {
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.conteudo_horario h2 {
+
+    font-family: "Montserrat", bold;
+    font-size: 25px;
+    margin-bottom: 100px;
+
+    display: flex;
+    justify-content: center;
+
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#horario img {
+    max-width: 600px;
+    width: 55%;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.conteudo_horario {
+    width: 40%;
+}
+
+
+
+table {
+
+    font-family: "Montserrat", sans-serif;
+
+    font-weight: 400;
+    font-size: 17px;
+
+
+    margin: 0 auto;
+}
+
+td {
+    padding: 8px;
+    text-align: justify;
+}
